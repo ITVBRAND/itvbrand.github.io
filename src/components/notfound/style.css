@@ -1,0 +1,38 @@
+.section__notfound {
+    padding: 0 32px;
+}
+
+.notfound__wrap {
+    position: var(--relative);
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    justify-content: var(--center);
+}
+
+.notfound__title {
+    margin: 0 0 32px;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    text-align: var(--center);
+
+    z-index: 1;
+}
+
+.notfound__bg {
+    position: var(--absolute);
+    width: 100%;
+    height: var(--auto);
+
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.notfound__img {
+    height: 300px;
+    object-fit: contain;
+
+    z-index: 1;
+}

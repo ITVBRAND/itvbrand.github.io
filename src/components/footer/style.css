@@ -1,0 +1,27 @@
+.footer {
+    display: var(--flex);
+    padding: 24px 32px;
+    justify-content: var(--space-between);
+    align-items: var(--center);
+    gap: 60px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    background: var(--clr-black, #000);
+}
+
+.footer__nav {
+    display: var(--flex);
+    align-items: var(--center);
+}
+
+.footer__text {
+    font-size: 16px;
+    font-style: var(--normal);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer__text:not(:last-child) {
+    margin-right: 4px;
+}

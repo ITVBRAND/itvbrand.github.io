@@ -1,0 +1,44 @@
+.hero {
+    padding: 0 32px 17px;
+
+    border-radius: 10px;
+    background: var(--clr-black, #000);
+}
+
+.hero__block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 28px;
+}
+    
+.hero__wallpaper { grid-area: 1 / 7 / 9 / 13; }
+.hero__article { grid-area: 5 / 1 / 9 / 7; }
+
+.hero__wallpaper {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.hero__link {
+    display: var(--flex);
+    align-items: var(--center);
+}
+
+.hero__link-text {
+    margin-right: 6px;
+}
+
+.hero__arrow {
+    transition: 0.3s ease-in-out;
+}
+
+.hero__link:hover .hero__arrow {
+    margin-top: 6px;
+}
+
+.hero__link:hover .hero__arrow path {
+    fill: var(--clr-grey);
+}

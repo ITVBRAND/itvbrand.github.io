@@ -1,0 +1,120 @@
+.contact__wrap {
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+    align-self: stretch;
+}
+
+.contact__info {
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+}
+
+.contact__text {
+    font-size: 14px;
+    font-style: var(-normal);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.contact__data-wrap {
+    margin: 24px 0 48px;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+}
+
+.contact__data-line {
+    margin: 16px 0;
+    display: var(--block);
+
+    height: 1px;
+    width: 296px;
+
+    background-color: var(--clr-dark);
+}
+
+.contact__data {
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 16px;
+}
+
+.contact__data-title {
+    margin: 0;
+
+    font-size: 14px;
+    font-style: var(--normal);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.contact__data-link {
+    font-size: 14px;
+    font-style: var(--normal);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.contact__social {
+    display: var(--flex);
+    align-items: var(--center);
+    gap: 16px;
+}
+
+.contact__form {
+    display: flex;
+    width: 523px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    border-radius: 8px;
+    border: 1px solid var(--V-Brand-Stroke_Section, #181818);
+    background: var(--V-Brand-Black_Section, #0C0C0D);
+
+    box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+.contact__form-wrap {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.contact__form-group {
+    width: 100%;
+
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--flex-start);
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.contact__form-block {
+    display: var(--flex);
+    align-items: var(--center);
+}
+
+.contact__form-checkbox {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .contact__wrap {
+        flex-direction: column-reverse;
+        align-items: var(--flex-start);
+        gap: 30px;
+    }
+
+    .contact__form {
+        display: var(--flex);
+        width: -webkit-fill-available;
+    }
+
+}
