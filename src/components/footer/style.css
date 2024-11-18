@@ -25,3 +25,18 @@
 .footer__text:not(:last-child) {
     margin-right: 4px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        padding: 28px 6px;
+        gap: 48px;
+        
+        flex-direction: var(--column);
+    }
+    
+    .footer__nav {
+        flex-direction: var(--column);
+    }
+
+}

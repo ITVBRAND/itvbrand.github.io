@@ -60,3 +60,15 @@
         transform: translateX(-100%);
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .clients__item {
+        width: 144px;
+        height: 72px;
+        padding: 12px 18px;
+        gap: 6px;
+        border-radius: 6px;
+    }
+
+}

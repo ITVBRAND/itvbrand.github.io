@@ -111,7 +111,7 @@ const Contact = () => {
                         <label htmlFor="privacy">Принимаю политику конфиденциальности и.т.д</label>
                     </div>
                     <div className="contact__form-group">
-                        <button type="submit">Отправить</button>
+                        <button className='contact__btn' type="submit">Отправить</button>
                     </div>
                 </form>
             </div>

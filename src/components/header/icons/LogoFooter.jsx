@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import '../style.css';
 
-const Logo = () => (
-    <Link className='header__logo header__logo-mobile' to="/">
+const LogoFooter = () => (
+    <Link className='header__logo' to="/">
         <svg className='logo' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
             <g clipPath="url(#clip0_1098_2251)">
                 <mask id="mask0_1098_2251" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
@@ -23,4 +23,4 @@ const Logo = () => (
     </Link>
 );
 
-export default Logo;
+export default LogoFooter;

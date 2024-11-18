@@ -1,5 +1,5 @@
 .header__static {
-    padding: 23px 32px;
+    padding: 23px 2px;
     display: var(--flex);
     justify-content: var(--space-between);
 }
@@ -185,6 +185,162 @@
     stroke: var(--clr-white);
 }
 
+/*mobile navigation start*/
+
+.nav__container {
+    margin: 0 12px;
+    width: -webkit-fill-available;
+    position: fixed;
+
+    display: var(--none);
+
+    bottom: 18px;
+    z-index: 10;
+}
+.nav{
+    background-color: var(--clr-black);
+    width: -webkit-fill-available;
+    height: var(--auto);
+    border-radius: 16px;
+    padding: 0 6px;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, .2);
+    display: var(--flex);
+    align-items: var(--center);
+    overflow: hidden;
+}
+
+.nav__links {
+    margin: 0;
+    padding: 12px 6px;
+
+    list-style: var(--none);
+    width: 100%;
+    display: var(--flex);
+    justify-content: var(--space-between);
+}
+
+.nav__link a{
+    display: var(--flex);
+    flex-direction: var(--column);
+    align-items: var(--center);
+
+    color: var(--white-color);
+    font-size: 2.5rem;
+    opacity: 0.5;
+}
+
+.nav__light{
+    position: var(--absolute);
+    top: 0;
+    left: 4px;
+    background-color: var(--white-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+
+    display: var(--flex);
+    justify-content: var(--center);
+
+    transition: .3s ease;
+}
+
+/* .nav__light::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: var(--absolute);
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255, .3) -50%, rgba(255,255,255, 0) 90%);
+    clip-path: polygon(30% 0, 70% 0, 100% 100%, 0% 100%);
+} */
+
+
+.nav__link.active a{
+    opacity: 1;
+}
+
+.nav__link.active a .bx-home-alt-2{
+    color: var(--home-icon-color);
+    text-shadow: 0 0 15px var(--home-icon-color),
+                0 0 30px var(--home-icon-color),
+                0 0 45px var(--home-icon-color),
+                0 0 60px var(--home-icon-color);
+}
+
+.nav__link:nth-child(1).active ~ .nav__light{
+    background-color: var(--home-icon-color);
+}
+
+
+.nav__link.active a .bx-heart{
+    color: var(--heart-icon-color);
+    text-shadow: 0 0 15px var(--heart-icon-color),
+                0 0 30px var(--heart-icon-color),
+                0 0 45px var(--heart-icon-color),
+                0 0 60px var(--heart-icon-color);
+}
+
+.nav__link:nth-child(2).active ~ .nav__light{
+    background-color: var(--heart-icon-color);
+}
+
+
+.nav__link.active a .bx-plus-circle{
+    color: var(--plus-icon-color);
+    text-shadow: 0 0 15px var(--plus-icon-color),
+                0 0 30px var(--plus-icon-color),
+                0 0 45px var(--plus-icon-color),
+                0 0 60px var(--plus-icon-color);
+}
+
+.nav__link:nth-child(3).active ~ .nav__light{
+    background-color: var(--plus-icon-color);
+}
+
+
+
+.nav__link.active a .bx-user{
+    color: var(--user-icon-color);
+    text-shadow: 0 0 15px var(--user-icon-color),
+                0 0 30px var(--user-icon-color),
+                0 0 45px var(--user-icon-color),
+                0 0 60px var(--user-icon-color);
+}
+
+.nav__link:nth-child(4).active ~ .nav__light{
+    background-color: var(--user-icon-color);
+}
+
+
+.nav__link.active a .bx-bell{
+    color: var(--bell-icon-color);
+    text-shadow: 0 0 15px var(--bell-icon-color),
+                0 0 30px var(--bell-icon-color),
+                0 0 45px var(--bell-icon-color),
+                0 0 60px var(--bell-icon-color);
+}
+
+.nav__link:nth-child(5).active ~ .nav__light{
+    background-color: var(--bell-icon-color);
+}
+
+.header__mobile-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.nav__title {
+    margin: 10px 0 0;
+    display: inline-block;
+    text-align: var(--center);
+
+    font-size: 10px;
+    line-height: 100%;
+    color: var(--clr-yellow);
+}
+
+/*mobile navigation end*/
+
 @media screen and (min-width: 1296px) {
 
     .header__fixed.visible {
@@ -196,7 +352,32 @@
     }
 
     .header__fixed-wrap {
-        max-width: 1214px;
+        /* max-width: 1214px; */
+        width: 78%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__fixed {
+        display: var(--none);
+    }
+
+    .header__hero-wrap {
+        display: var(--none);
+    }
+
+    .nav__container {
+        display: var(--block);
+    }
+
+    .header__logo-mobile .logo g g path {
+        fill: #000;
+    }
+
+    .header__logo-mobile .logo__text {
+        color: var(--clr-black);
     }
 
 }

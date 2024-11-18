@@ -118,3 +118,37 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+
+    .contact__form-wrap {
+        flex-direction: var(--column);
+        gap: 12px;
+    }
+
+    .contact__form {
+        padding: 24px 12px;
+    }
+
+    .contact__btn {
+        width: 100%;
+    }
+
+    .contact__info {
+        width: 100%;
+    }
+
+    .contact__data-wrap {
+        width: 100%;
+    }
+
+    .contact__data-line {
+        width: 100%;
+    }
+
+    .contact__social {
+        flex-wrap: wrap;
+        justify-content: var(--center);
+    }
+
+}

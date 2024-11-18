@@ -90,7 +90,24 @@
     }
 
     .news__categor {
-        overflow: var(--hidden);
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .news__item {
+        border-radius: 12px;
+    }
+    
+    .news__img {
+        height: 300px;
+    }
+
+    .news__article {
+        padding: 20px 24px;
+        gap: 12.25px;
     }
 
 }

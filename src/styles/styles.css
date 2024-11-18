@@ -9,6 +9,7 @@
     --clr-yellow: #FFC500;
     --clr-yellow-dark: rgba(255, 197, 0, 0.30);
 
+    --block: block;
     --flex: flex;
     --flex-start: flex-start;
     --grid: grid;
@@ -166,6 +167,7 @@ button {
     font-weight: 500;
     line-height: 140%;
     letter-spacing: -0.1px;
+    white-space: nowrap;
 
     display: var(--flex);
     padding: 12px 24px;
@@ -279,6 +281,43 @@ button:hover {
     
     .section__article {
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+        font-style: var(--normal);
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+
+    h2 {
+        margin: 0;
+
+        font-size: 30px;
+        font-style: var(--normal);
+        font-weight: 700;
+        line-height: 52px;
+    }
+
+    p {
+        font-size: 12px;
+        font-style: var(--normal);
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    .section {
+        padding: 54px 6px;
+        gap: 30px;
+    }
+
+    input {
+        padding: 12px 16px;
     }
 
 }

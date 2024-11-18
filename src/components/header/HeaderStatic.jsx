@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from './icons/Logo';
 import DropDown from './DropDown';
 import Button from '../elements/Button';
+import LogoFooter from './icons/LogoFooter';
 
 const HeaderStatic = () => (
     <header className='header__static'>
-        <Logo />
+        <LogoFooter />
         <div className='header__hero-wrap'>
             <nav className="header__hero-nav">
                 <Link className='header__link' to="/about">Принципы</Link>

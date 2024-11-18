@@ -1,18 +1,18 @@
 import React from 'react';
 
-import HeaderHero from '../components/header/HeaderHero';
 import Footer from '../components/footer/Footer';
 
 import '../components/notfound/style.css';
 
 import VectorNotFound from '../components/notfound/vector';
 import imgNotFound from '../static/404hand.png';
+import HeaderStatic from '../components/header/HeaderStatic';
 
 const NotFound = () => {
   return (
     <div className='notfound padding'>
         <div className="section section__notfound">
-          <HeaderHero />
+          <HeaderStatic />
           <div className="notfound__wrap">
             <h1 className='notfound__title'><span>Прикольно!</span><span>Ты сломал нам сайт</span></h1>
             <div className="notfound__bg">

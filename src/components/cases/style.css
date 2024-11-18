@@ -79,3 +79,23 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+
+    .case__item-pages {
+        width: 100%;
+    }
+
+    .case__item-img {
+        height: var(--auto);
+    }
+
+    .case__item-title {
+        margin: 0;
+    }
+    
+    .case__item-article {
+        padding: 20px 24px;
+    }
+
+}

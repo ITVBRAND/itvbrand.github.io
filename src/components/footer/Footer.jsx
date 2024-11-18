@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import './style.css';
 
-import Logo from '../header/icons/Logo';
+import LogoFooter from '../header/icons/LogoFooter';
 
 const Footer = () => (
     <footer className='footer'>
-        <Logo />
+        <LogoFooter />
         <nav className="footer__nav">
             <p className="footer__text footer__copyright">
                 Copyright © 2025 Vbrand |

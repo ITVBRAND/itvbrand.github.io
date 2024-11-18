@@ -42,3 +42,83 @@
 .hero__link:hover .hero__arrow path {
     fill: var(--clr-grey);
 }
+
+@media screen and (max-width: 768px) {
+
+    .header__hero {
+        padding: 20px 6px;
+        position: var(--absolute);
+        top: 0;
+        left: 0;
+
+        width: 80%;
+        z-index: 1;
+        border: var(--none);
+    }
+
+    .hero__article-title {
+        position: var(--relative);
+        bottom: 0;
+        left: 0;
+
+        color: var(--clr-black);
+        font-size: 36px;
+        font-style: var(--normal);
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+
+        background: var(--none);
+        background-clip: var(--none);
+        -webkit-background-clip: var(--none);
+        -webkit-text-fill-color: var(--none);
+
+        z-index: 1;
+    }
+
+    .hero__article {
+        padding: 0 6px;
+    }
+
+    .hero__link {
+        position: var(--relative);
+        bottom: 0;
+        left: 0;
+
+        color: var(--clr-black);
+
+        z-index: 1;
+    }
+
+    .hero__arrow path {
+        fill: var(--clr-black);
+    }
+
+    .hero {
+        padding: 0;
+        position: var(--relative);
+        overflow: var(--hidden);
+
+        height: 98vh;
+    }
+
+    .hero__block {
+        position: var(--absolute);
+        bottom: 0;
+        right: 0;
+
+        height: 98vh;
+
+        display: var(--flex);
+        align-items: var(--center);
+    }
+
+    .hero__wallpaper {
+        position: var(--absolute);
+        top: 0;
+        right: 0;
+
+        height: 98vh;
+    }
+
+}

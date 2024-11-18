@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.css';
+
 import Wallpaper from '../../static/lemon.webm';
 import HeaderHero from '../header/HeaderHero';
 import Arrow from './Arrow';
@@ -10,7 +11,7 @@ const Hero = () => (
         <HeaderHero />
         <div className="hero__block">
             <article className="hero__article">
-                <h1>
+                <h1 className='hero__article-title'>
                     Маркетинговое агентсво, где рождаются смыслы
                 </h1>
                 <a className='hero__link' href='#clients'>

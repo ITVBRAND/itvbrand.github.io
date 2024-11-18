@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
-import HeaderHero from '../header/HeaderHero';
 import dataCase from './dataCase.js';
+import HeaderStatic from '../header/HeaderStatic.jsx';
 
 const Caselist = () => {
 
     return (
         <section className="section section__case-list">
-            <HeaderHero />
+            <HeaderStatic />
             <article className="section__article section__article-case">
                 <h1 className="article__title section__title">
                     Кейсы

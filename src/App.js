@@ -11,11 +11,15 @@ import NotFound from './pages/NotFound';
 
 import Service from './pages/services/Service';
 import HeaderFixed from './components/header/HeaderFixed';
+import HeaderMobile from './components/header/HeaderMobile';
+import ScrollToTop from './components/settings/ScrollToTop';
 
 function App() {
     return (
         <div className='body'>
             <Router>
+                <ScrollToTop />
+                <HeaderMobile />
                 <HeaderFixed />
                 <div className='body__wrapper'>
                     <div className='container'>
