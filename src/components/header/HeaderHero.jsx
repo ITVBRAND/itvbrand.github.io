@@ -5,7 +5,7 @@ import './style.css';
 
 import Logo from './icons/Logo';
 import DropDown from './DropDown';
-import Button from '../elements/Button';
+import FeedBackBtn from './FeedBackBtn';
 
 const HeaderHero = () => (
     <header className='header__hero'>
@@ -18,7 +18,7 @@ const HeaderHero = () => (
                 <Link className='header__link' to="/contact">Контакты</Link>
                 <Link className='header__link' to="/news">Новости</Link>
             </nav>
-            <Button buttonText="Связаться с нами" />
+            <FeedBackBtn />
         </div>
     </header>
 );

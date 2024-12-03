@@ -20,13 +20,14 @@ const News = () => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 1024);
         };
-
+    
+        handleResize(); // Установить начальное значение
         window.addEventListener('resize', handleResize);
-
+    
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, []);    
 
     return (
         <section className="section section__news">

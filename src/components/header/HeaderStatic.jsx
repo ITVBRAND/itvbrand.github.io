@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import DropDown from './DropDown';
-import Button from '../elements/Button';
 import LogoFooter from './icons/LogoFooter';
+import FeedBackBtn from './FeedBackBtn';
 
 const HeaderStatic = () => (
     <header className='header__static'>
@@ -16,7 +16,7 @@ const HeaderStatic = () => (
                 <Link className='header__link' to="/contact">Контакты</Link>
                 <Link className='header__link' to="/news">Новости</Link>
             </nav>
-            <Button buttonText="Связаться с нами" />
+            <FeedBackBtn />
         </div>
     </header>
 );

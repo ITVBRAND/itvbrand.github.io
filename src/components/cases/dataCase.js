@@ -1,16 +1,16 @@
 const dataCase = [
     {
         id: 1,
-        title: "Military Market",
-        description: "Военный магазин тактической одежды и экипировки.",
-        img: require('../../static/case/1.png'),
+        title: "Бизнес в стиле хаки",
+        description: "Разработка интернет-магазина тактической одежды и экипировки.",
+        img: require('../../static/case/1.webp'),
         link: "/case/military",
         index: true
     },
 
     {
         id: 2,
-        title: "Another Case",
+        title: "Мануфактура",
         description: "Описание другого кейса.",
         img: require('../../static/case/1.png'),
         link: "/case/another",
@@ -19,7 +19,7 @@ const dataCase = [
 
     {
         id: 3,
-        title: "Third Case",
+        title: "Fox",
         description: "Описание третьего кейса.",
         img: require('../../static/case/1.png'),
         link: "/case/third",
@@ -28,7 +28,7 @@ const dataCase = [
 
     {
         id: 4,
-        title: "Fourth Case",
+        title: "New armor",
         description: "Описание четвертого кейса.",
         img: require('../../static/case/1.png'),
         link: "/case/fourth",
@@ -37,7 +37,7 @@ const dataCase = [
 
     {
         id: 5,
-        title: "Fifth Case",
+        title: "Модуль конструкт",
         description: "Описание пятого кейса.",
         img: require('../../static/case/1.png'),
         link: "/case/fifth",

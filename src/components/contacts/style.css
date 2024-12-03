@@ -104,6 +104,43 @@
     margin-right: 12px;
 }
 
+/*Personal Contact*/
+
+.personal__contact {
+    padding-top: 0;
+}
+
+.personal__contact-wrap {
+    display: var(--flex);
+    justify-content: var(--space-between);
+}
+
+.personal__contact-title {
+    margin-top: 0;
+}
+
+/*Personal Contact*/
+
+/*Maps*/
+
+.maps {
+    position: var(--relative);
+    overflow: var(--hidden);
+}
+
+.maps__frame {
+    width: 700px;
+    height: 500px;
+
+    position: var(--relative);
+    border: var(--none);
+    border-radius: 6px;
+
+    filter: grayscale(100%);
+}
+
+/*Maps*/
+
 @media screen and (max-width: 1024px) {
     
     .contact__wrap {
@@ -115,6 +152,16 @@
     .contact__form {
         display: var(--flex);
         width: -webkit-fill-available;
+    }
+
+    .personal__contact-wrap {
+        flex-direction: var(--column);
+        gap: 32px;
+    }
+
+    .maps__frame {
+        width: 100%;
+        height: 250px;
     }
 
 }
@@ -148,7 +195,7 @@
 
     .contact__social {
         flex-wrap: wrap;
-        justify-content: var(--center);
+        justify-content: var(--flex-start);
     }
 
 }

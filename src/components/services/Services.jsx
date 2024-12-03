@@ -11,7 +11,7 @@ const SectionHeader = () => (
         <h2 className="article__title">Услуги</h2>
         <p className="article__text">
             Мы не следуем трендам, мы их формируем.
-            Именно мы решаем на что люди завтра потратят свои деньги.
+            Именно мы решаем, на что люди завтра потратят свои деньги.
         </p>
     </article>
 );
@@ -20,7 +20,7 @@ const SectionHeader = () => (
 const AccordionItem = ({ service, isActive, toggleAccordion, accordionRef }) => (
     <div className="accordion__item" ref={accordionRef}>
         <div className="accordion__title" onClick={() => toggleAccordion(service.id)}>
-            <h3 className='accordion__title-title'>{service.title}</h3>
+            <h3 className="accordion__title-title">{service.title}</h3>
             <span className={`accordion__icon ${isActive ? 'open' : ''}`}>+</span>
         </div>
         <div className={`accordion__content ${isActive ? 'open' : ''}`} style={{ maxHeight: isActive ? '500px' : '0' }}>
@@ -40,7 +40,7 @@ const AccordionItem = ({ service, isActive, toggleAccordion, accordionRef }) => 
 const ServiceInfo = ({ service }) => (
     <div className="services__info">
         <article className="services__article">
-            <h3 className="services__title">{service.title}</h3>
+            <h3 className="services__title">{service.subtitle}</h3>
             <p className="services__text">{service.description}</p>
             <div className="services__article-wrap">
                 <button className="btn-alternative">Оставить заявку</button>
@@ -64,10 +64,21 @@ const Services = () => {
         setActiveService(service);
     };
 
+    const scrollToAccordion = (element) => {
+        const offset = window.innerWidth <= 1024 ? 100 : 0; // Отступ для мобильной версии
+        const top = element.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+            top,
+            behavior: 'smooth',
+        });
+    };
+
     const toggleAccordion = (id) => {
         setActiveAccordion((prev) => (prev === id ? null : id));
+
         if (accordionRefs.current[id]) {
-            accordionRefs.current[id].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            scrollToAccordion(accordionRefs.current[id]);
         }
     };
 

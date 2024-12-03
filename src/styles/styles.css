@@ -122,7 +122,7 @@ input {
     color: var(--clr-grey);
 
     font-size: 14px;
-    font-style: normal;
+    font-style: var(--normal);
     font-weight: 400;
     line-height: 140%;
 
@@ -204,7 +204,7 @@ button:hover {
     align-self: stretch;
 
     border-radius: 10px;
-    background: var(--clr-black, #000);
+    background: var(--clr-black);
 }
 
 .section__article {

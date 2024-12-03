@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './style.css';
+
 import List from './List';
 
 const Client = () => {

@@ -32,6 +32,14 @@
     transition: 0.3s ease-in-out;
 }
 
+.services__item:hover {
+    background: var(--clr-yellow-dark);
+} 
+
+.services__item:hover p {
+    color: var(--clr-yellow);
+} 
+
 .services__item.active {
     background: var(--clr-dark);
 }
@@ -80,7 +88,7 @@
     grid-area: 1 / 5 / 2 / 9;
 }
 
-.serivces__info-picture {
+.services__info-picture {
     width: 100%;
     object-fit: cover;
     border-radius: 8px;

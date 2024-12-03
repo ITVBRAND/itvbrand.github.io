@@ -23,6 +23,25 @@
     border: 1px solid var(--V-Brand-Stroke_Section, #181818);
     background: var(--V-Brand-Black_Section, #0C0C0D);
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.00), 0px 0px 0px 1px rgba(244, 244, 245, 0.10), 0px 0px 0px 0px #FFF;
+
+    transition: 0.4s ease-in-out;
+}
+
+.case__item:hover {
+    transform: scale(1.01);
+
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 197, 0, 0.4);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(255, 197, 0, 0.4);
+    box-shadow: 0px 0px 12px 0px rgba(255, 197, 0, 0.4);
+}
+
+.case__item-title {
+    transition: 0.4s ease-in-out;
+}
+
+
+.case__item:hover .case__item-title {
+    color: var(--clr-yellow);
 }
     
 .case__item-1 { grid-area: 1 / 1 / 2 / 5; }
