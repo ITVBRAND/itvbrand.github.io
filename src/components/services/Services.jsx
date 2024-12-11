@@ -41,7 +41,7 @@ const ServiceInfo = ({ service }) => (
     <div className="services__info">
         <article className="services__article">
             <h3 className="services__title">{service.subtitle}</h3>
-            <p className="services__text">{service.description}</p>
+            <p>{service.description}</p>
             <div className="services__article-wrap">
                 <button className="btn-alternative">Оставить заявку</button>
                 <Link className="services__link" to={service.link}>Подробнее</Link>

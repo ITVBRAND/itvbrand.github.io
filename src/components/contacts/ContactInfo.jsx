@@ -9,7 +9,6 @@ import Tg from './social/tg';
 import Inst from './social/Inst';
 import Yt from './social/Yt';
 import Vk from './social/Vk';
-import Be from './social/Be';
 import Gith from './social/Gith';
 
 const ContactInfo = () => {

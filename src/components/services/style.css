@@ -52,11 +52,6 @@
     margin: 0;
 
     color: var(--clr-grey);
-
-    font-size: 14px;
-    font-style: var(--normal);
-    font-weight: 400;
-    line-height: 140%;
 }
 
 .services__info {

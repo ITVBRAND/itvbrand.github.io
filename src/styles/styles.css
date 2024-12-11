@@ -1,6 +1,4 @@
 :root {
-    --title-gradient: linear-gradient(135deg, #FFF 0%, #71717A 100%);
-
     --clr-dark: #181818;
     --clr-alt-black: #0C0C0D;
     --clr-black: #000;
@@ -40,18 +38,13 @@ body {
 }
 
 h1 {
-    font-size: 62px;
+    font-size: 58px;
     font-style: var(--normal);
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -2.5px;
 
     color: var(--clr-white);
-
-    background: var(--title-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -62,10 +55,6 @@ h2 {
     letter-spacing: -1.2px;
 
     color: var(--clr-white);
-    background: linear-gradient(135deg, #FFF 0%, #71717A 100%);
-    background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -78,10 +67,11 @@ h3 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-style: var(--normal);
-    font-weight: 500;
-    line-height: 140%;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.6px;
 
     color: var(--clr-grey);
 }
@@ -91,7 +81,7 @@ a {
     font-style: var(--normal);
     font-weight: 500;
     line-height: 140%;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.6px;
     text-decoration: var(--none);
 
     color: var(--clr-white);
@@ -170,7 +160,7 @@ button {
     white-space: nowrap;
 
     display: var(--flex);
-    padding: 12px 24px;
+    padding: 8px 24px;
     justify-content: var(--center);
     align-items: var(--center);
 
@@ -179,7 +169,7 @@ button {
     cursor: pointer;
     
     transition: 0.3s ease-in-out;
-    border-radius: 38px;
+    border-radius: 20px;
     background: var(--clr-yellow);
 }
 
@@ -226,7 +216,7 @@ button:hover {
     letter-spacing: -0.1px;
 
     display: var(--flex);
-    padding: 12px 24px;
+    padding: 8px 24px;
     justify-content: var(--center);
     align-items: var(--center);
 
@@ -235,7 +225,7 @@ button:hover {
     cursor: pointer;
     
     transition: 0.3s ease-in-out;
-    border-radius: 38px;
+    border-radius: 20px;
     color: var(--clr-dark);
     background: var(--clr-yellow);
 }
@@ -277,6 +267,14 @@ button:hover {
 
 }
 
+@media screen and (max-width: 1280px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
     
     .section__article {
@@ -305,10 +303,13 @@ button:hover {
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
         font-style: var(--normal);
         font-weight: 400;
-        line-height: 16px;
+        line-height: var(--auto);
+
+        
+    letter-spacing: -0.4px;
     }
     
     .section {

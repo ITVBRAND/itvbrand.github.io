@@ -1,35 +1,61 @@
+/*news detail*/
+
+.section__news-detail {
+    padding-top: 0;
+}
+
+.section__news-container {
+    margin: 0 auto;
+    max-width: 806px;
+}
+
+.section__news-container {
+    width: 100%;
+}
+
+.news__detail-picture {
+    width: 100%;
+}
+
+.section__news-container p {
+    word-wrap: break-word;
+    color: var(--clr-white);
+    font-size: 16px;
+    font-style: var(-normal);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section__news-container p img {
+    width: 100%;
+}
+
+/*news detail*/
+
+.news__page {
+    padding-top: 0;
+}
+
+.news__page-article {
+    max-width: 420px;
+
+    text-align: var(--center);
+}
+
+.news__page-title {
+    margin: 0;
+}
+
+.section__header {
+    display: var(--flex);
+    justify-content: var(--center);
+}
+
 .news__wrap {
     display: var(--flex);
     flex-direction: var(--column);
     align-items: flex-start;
     gap: 30px;
-}
-
-.news__categor {
-    display: var(--flex);
-    align-items: var(--flex-start);
-    gap: 12px;
-    align-self: stretch;
-}
-
-.news__categories-btn {
-    padding: 12px 24px;
-
-    color: var(--clr-grey);
-    font-size: 14px;
-    font-style: var(--normal);
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: -0.1px;
-
-    border-radius: 8px;
-    border: 1px solid var(--clr-dark);
-    background: var(--clr-alt-black);
-}
-
-.news__categories-btn.active {
-    color: var(--clr-white);
-    background: var(--clr-dark);
 }
 
 .news__list {
@@ -97,6 +123,34 @@
     justify-content: var(--center);
 }
 
+.news__tag-list {
+    position: var(--absolute);
+    top: 28px;
+    right: 28px;
+
+    display: var(--flex);
+    gap: 14px;
+}
+
+.news__tag-item {
+    padding: 12px 10px;
+
+    display: var(--flex);
+
+    border-radius: 3px;
+    background: var(--Neutral-colors-100, #FFF);
+    box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+.news__tag-name {
+    text-align: var(--center);
+
+    font-size: 16px;
+    font-style: var(--normal);
+    font-weight: 600;
+    line-height: 22px;
+}
+
 @media screen and (max-width: 1024px) {
 
     .news__list {
@@ -105,10 +159,6 @@
     
     .news__item {
         width: 100%;
-    }
-
-    .news__categor {
-        overflow: scroll;
     }
 
 }
@@ -126,17 +176,6 @@
     .news__article {
         padding: 20px 24px;
         gap: 12.25px;
-    }
-
-    .news__categor {
-        display: var(--flex);
-        gap: 12px;
-        overflow-x: var(-auto);
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .news__categories-btn {
-        flex-shrink: 0; /* Предотвращает сжатие кнопок */
     }
 
 }

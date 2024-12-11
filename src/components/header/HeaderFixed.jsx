@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-
 import './style.css';
 
 import Logo from './icons/Logo';
@@ -9,21 +8,26 @@ import FeedBackBtn from './FeedBackBtn';
 
 const HeaderFixed = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < lastScrollY && currentScrollY > 50) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
-  };
+
+    setLastScrollY(currentScrollY);
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <header className={`header__fixed ${isVisible ? 'visible' : ''}`}>

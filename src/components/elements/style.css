@@ -1,0 +1,10 @@
+.highlight {
+  color: var(--clr-yellow);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .highlight {
+    color: var(--clr-black);
+  }
+}

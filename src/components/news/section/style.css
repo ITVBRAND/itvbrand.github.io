@@ -1,0 +1,25 @@
+/* style.css */
+
+/* Стили для ПК версии */
+@media (min-width: 769px) {
+    .news__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .news__list .news__page-item {
+      flex: 0 0 48%;
+    }
+  }
+  
+  /* Стили для мобильной версии */
+  @media (max-width: 768px) {
+    .news__list {
+      display: block;
+    }
+  
+    .news__list .news__page-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

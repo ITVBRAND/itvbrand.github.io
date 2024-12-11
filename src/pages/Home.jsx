@@ -6,7 +6,7 @@ import Hero from '../components/hero/Hero';
 import Client from '../components/clients/Client';
 import Cases from '../components/cases/Cases';
 import Services from '../components/services/Services';
-import News from '../components/news/News';
+import News from '../components/news/section/News';
 import Contact from '../components/contacts/Contact';
 
 const Home = () => (

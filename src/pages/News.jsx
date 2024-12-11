@@ -1,12 +1,11 @@
 import React from 'react';
 
-import HeaderStatic from '../components/header/HeaderStatic';
 import Footer from '../components/footer/Footer';
+import NewsHero from '../components/news/NewsHero';
 
 const News = () => (
-    <div className='news'>
-        <HeaderStatic />
-        <h1>News</h1>
+    <div className='news padding'>
+        <NewsHero />
         <Footer />
     </div>
 );
