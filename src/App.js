@@ -22,6 +22,8 @@ import HeaderFixed from './components/header/HeaderFixed';
 import HeaderMobile from './components/header/HeaderMobile';
 import ScrollToTop from './components/settings/ScrollToTop';
 import NewsDetail from './pages/NewsDetail'; // Импортируем компонент NewsDetail
+import Privacy from "./pages/Privacy";
+import ContactBtn from "./components/header/ContactBtn";
 
 function App() {
 
@@ -31,11 +33,12 @@ function App() {
         <ScrollToTop />
         <Snowfall
            color="#fff"
-           snowflakeCount={200}
+           snowflakeCount={50}
            style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 9999 }}
          />
         <HeaderMobile />
         <HeaderFixed />
+        <ContactBtn />
         <div className='body__wrapper'>
           <div className='container'>
             <Routes>
@@ -81,6 +84,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/service" element={<Service />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/privacy" element={<Privacy />} />
             </Routes>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 
 import Footer from '../components/footer/Footer';
 
@@ -11,6 +12,10 @@ import Contact from '../components/contacts/Contact';
 
 const Home = () => (
     <div className='home padding'>
+        <Helmet>
+            <title>V-Brand — Маркетинговое агенство</title>
+            <meta name="description" content="Поможем отстроиться от конкурентов и начать доминировать на вашем рынке. Упакуем ваш бизнес так, чтобы у клиентов текли слюни, а у конкурентов - слезы." />
+        </Helmet>
         <Hero />
         <Client />
         <Cases />

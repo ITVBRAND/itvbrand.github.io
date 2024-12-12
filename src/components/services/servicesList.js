@@ -1,4 +1,4 @@
-import test from '../../static/services/servicestest.png';
+import test from '../../static/services/servicestest.webp';
 
 const servicesList = [
     {

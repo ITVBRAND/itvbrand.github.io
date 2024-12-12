@@ -5,7 +5,7 @@ import Footer from '../components/footer/Footer';
 import '../components/notfound/style.css';
 
 import VectorNotFound from '../components/notfound/vector';
-import imgNotFound from '../static/404hand.png';
+import imgNotFound from '../static/404hand.webp';
 import HeaderStatic from '../components/header/HeaderStatic';
 
 const NotFound = () => {

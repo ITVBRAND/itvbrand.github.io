@@ -15,10 +15,7 @@ const Footer = () => (
             <p className="footer__text footer__copyright">
                 Все права защищены |
             </p>
-            <Link className='footer__text footer__link' to="/oferta">
-                Публичная оферта |
-            </Link>
-            <Link className='footer__text footer__link' to="/policy">
+            <Link className='footer__text footer__link' to="/privacy">
                 Политика конфиденциальности
             </Link>
         </nav>

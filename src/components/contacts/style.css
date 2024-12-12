@@ -97,6 +97,10 @@
     margin-right: 12px;
 }
 
+.privacy__link {
+    text-decoration: underline;
+}
+
 /*Personal Contact*/
 
 .personal__contact {

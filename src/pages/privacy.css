@@ -1,0 +1,24 @@
+.section__privacy {
+    padding-top: 0;
+}
+
+.privacy__block h1 {
+    word-break: break-word;
+    line-height: normal;
+}
+
+.privacy__block h2 {
+    word-break: break-word;
+    line-height: normal;
+}
+
+
+.privacy__block ul {
+    list-style: circle;
+    color: var(--clr-grey);
+}
+
+.privacy__block p {
+    word-break: break-word;
+    line-height: normal;
+}

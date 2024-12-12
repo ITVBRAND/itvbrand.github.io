@@ -46,6 +46,7 @@ const FeedBackBtn = () => {
             <button className="modal-close" onClick={closeModal}>
                 &times;
             </button>
+            <h3>Оставить заявку</h3>
             <Forma />
           </div>
         </div>

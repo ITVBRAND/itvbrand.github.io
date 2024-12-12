@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 import "./style.css";
 
 const Forma = () => {
@@ -72,6 +74,7 @@ const Forma = () => {
           />
         </div>
         <div className="contact__form-group">
+        <label htmlFor="email">Ваше название</label>
           <input
             type="text"
             id="company"
@@ -93,16 +96,9 @@ const Forma = () => {
         ></textarea>
       </div>
       <div className="contact__form-block">
-        <input
-          className="contact__form-checkbox"
-          type="checkbox"
-          id="privacy"
-          name="privacy"
-          checked={formData.privacy}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="privacy">Принимаю политику конфиденциальности и.т.д</label>
+        <p className="contact__form-privacy">
+          Нажимая на кнопку, <Link className="privacy__link" to="/privacy">вы даёте согласие на обработку персональных данных.</Link>
+        </p>
       </div>
       <div className="contact__form-group">
         <button className="contact__btn" type="submit">Отправить</button>

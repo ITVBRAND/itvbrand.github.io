@@ -12,7 +12,7 @@ const dataCase = [
         id: 2,
         title: "Мануфактура",
         description: "Описание другого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/another",
         index: true
     },
@@ -21,7 +21,7 @@ const dataCase = [
         id: 3,
         title: "Fox",
         description: "Описание третьего кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/third",
         index: true
     },
@@ -30,7 +30,7 @@ const dataCase = [
         id: 4,
         title: "New armor",
         description: "Описание четвертого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/fourth",
         index: true
     },
@@ -39,7 +39,7 @@ const dataCase = [
         id: 5,
         title: "Модуль конструкт",
         description: "Описание пятого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/fifth",
         index: true
     },
@@ -48,7 +48,7 @@ const dataCase = [
         id: 6,
         title: "Sixth Case",
         description: "Описание шестого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/sixth",
         index: false
     },
@@ -57,7 +57,7 @@ const dataCase = [
         id: 7,
         title: "Seventh Case",
         description: "Описание седьмого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/seventh",
         index: false
     },
@@ -66,7 +66,7 @@ const dataCase = [
         id: 8,
         title: "Eighth Case",
         description: "Описание восьмого кейса.",
-        img: require('../../static/case/1.png'),
+        img: require('../../static/case/1.webp'),
         link: "/case/eighth",
         index: false
     },

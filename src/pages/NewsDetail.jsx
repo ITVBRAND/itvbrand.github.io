@@ -25,7 +25,9 @@ const NewsDetail = () => {
   }, [id]);
 
   if (!newsItem) {
-    return <div>Загрузка...</div>;
+    return <div className='news__loading'>
+              <p>Пожалуйста подождите...</p>
+           </div>;
   }
 
   return (
